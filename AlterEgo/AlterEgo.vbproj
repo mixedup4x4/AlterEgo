@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B1EC321-B3CA-4BA3-AC38-4F7D028B7FCF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>AlterEgo</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="Global.vb" />
+    <Compile Include="AlterEgo\My\MyApplication.vb" />
+    <Compile Include="AlterEgo\My\MyComputer.vb" />
+    <Compile Include="AlterEgo\My\MyProject.vb" />
+    <Compile Include="AlterEgo\frmCommandeer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmCool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmIconChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmNag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmRun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmTreeMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\MenuSubs.vb" />
+    <Compile Include="AlterEgo\modFileSettingsandArray.vb" />
+    <Compile Include="AlterEgo\modMain.vb" />
+    <Compile Include="AlterEgo\modReg.vb" />
+    <Compile Include="AlterEgo\My\Resources\Resources.vb" />
+    <Compile Include="AlterEgo\My\MySettings.vb" />
+    <Compile Include="AlterEgo\AdminTabsControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmBatchResults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\ctrlBlank.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\ctrlComputerInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\fnChangeLocalAdmin.vb" />
+    <Compile Include="AlterEgo\fnGetUserOnMachine.vb" />
+    <Compile Include="AlterEgo\fnNetSend.vb" />
+    <Compile Include="AlterEgo\fnRebootShutdown.vb" />
+    <Compile Include="AlterEgo\fnStartRemoteProcess.vb" />
+    <Compile Include="AlterEgo\frmChangePWSingle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmNetworkInfo.vb" />
+    <Compile Include="AlterEgo\modMSC.vb" />
+    <Compile Include="AlterEgo\frmAdminTK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\ctrlListProcessing.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\frmChangePW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\ModFN.vb" />
+    <Compile Include="AlterEgo\UFR.vb" />
+    <Compile Include="AlterEgo\EnterComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\EnterListBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\EnterTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlterEgo\ucRun.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="AlterEgo.frmCool.resources" />
+    <EmbeddedResource Include="AlterEgo.ctrlComputerInfo.resources" />
+    <EmbeddedResource Include="AlterEgo.frmChangePWSingle.resources" />
+    <EmbeddedResource Include="AlterEgo.frmAdminTK.resources" />
+    <EmbeddedResource Include="AlterEgo.frmChangePW.resources" />
+    <EmbeddedResource Include="AlterEgo.ctrlBlank.resources" />
+    <EmbeddedResource Include="AlterEgo.frmSettings.resources" />
+    <EmbeddedResource Include="AlterEgo.frmSplash.resources" />
+    <EmbeddedResource Include="AlterEgo.frmIconChange.resources" />
+    <EmbeddedResource Include="AlterEgo.Resources.resources" />
+    <EmbeddedResource Include="AlterEgo.frmRun.resources" />
+    <EmbeddedResource Include="AlterEgo.exe.licenses" />
+    <EmbeddedResource Include="AlterEgo.ctrlListProcessing.resources" />
+    <EmbeddedResource Include="AlterEgo.frmBatchResults.resources" />
+    <EmbeddedResource Include="AlterEgo.AdminTabsControl.resources" />
+    <EmbeddedResource Include="AlterEgo.frmCommandeer.resources" />
+    <EmbeddedResource Include="AlterEgo.ucRun.resources" />
+    <EmbeddedResource Include="AlterEgo.frmNetworkInfo.resources" />
+    <EmbeddedResource Include="AlterEgo.frmNag.resources" />
+    <EmbeddedResource Include="AlterEgo.frmTreeMenu.resources" />
+    <EmbeddedResource Include="AlterEgo.frmRegister.resources" />
+  </ItemGroup>
+</Project>
