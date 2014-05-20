@@ -10,15 +10,22 @@ Namespace AlterEgo
     <DesignerGenerated> _
     Public Class frmBatchResults
         Inherits Form
+
+        Dim AutoScaleMode As AutoScaleMode
+        Dim Controls As Object
+        Dim Name As String
+        Dim AutoScaleDimensions As SizeF
+        Dim ClientSize As Size
+
         ' Methods
         Public Sub New()
             Me.InitializeComponent
         End Sub
 
         <DebuggerNonUserCode> _
-        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Protected Sub Dispose(ByVal disposing As Boolean)
             If (disposing AndAlso (Not Me.components Is Nothing)) Then
-                Me.components.Dispose
+                Me.components.Dispose()
             End If
             MyBase.Dispose(disposing)
         End Sub

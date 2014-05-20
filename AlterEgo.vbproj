@@ -4,7 +4,7 @@
     <ProjectType>local</ProjectType>
     <ProjectVersion>7.10.377</ProjectVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2B1EC321-B3CA-4BA3-AC38-4F7D028B7FCF}</ProjectGuid>
+    <ProjectGuid>{86FDF018-3BCE-46B3-A78C-234B7E9C2058}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <AssemblyName>AlterEgo</AssemblyName>
     <OutputType>WinExe</OutputType>
@@ -37,38 +37,23 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
+    <Compile Include="AlterEgo\ManagementObjectEnumerator1.vb" />
+    <Compile Include="AlterEgo\MySettingsProperty.vb" />
+    <Compile Include="AlterEgo\My\Form.vb" />
     <Compile Include="AssemblyInfo.vb" />
     <Compile Include="Global.vb" />
     <Compile Include="AlterEgo\My\MyApplication.vb" />
     <Compile Include="AlterEgo\My\MyComputer.vb" />
     <Compile Include="AlterEgo\My\MyProject.vb" />
-    <Compile Include="AlterEgo\frmCommandeer.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlterEgo\frmCool.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlterEgo\frmIconChange.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlterEgo\frmNag.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlterEgo\frmRegister.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlterEgo\frmRun.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlterEgo\frmSettings.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlterEgo\frmSplash.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlterEgo\frmTreeMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="AlterEgo\frmCommandeer.vb" />
+    <Compile Include="AlterEgo\frmCool.vb" />
+    <Compile Include="AlterEgo\frmIconChange.vb" />
+    <Compile Include="AlterEgo\frmNag.vb" />
+    <Compile Include="AlterEgo\frmRegister.vb" />
+    <Compile Include="AlterEgo\frmRun.vb" />
+    <Compile Include="AlterEgo\frmSettings.vb" />
+    <Compile Include="AlterEgo\frmSplash.vb" />
+    <Compile Include="AlterEgo\frmTreeMenu.vb" />
     <Compile Include="AlterEgo\MenuSubs.vb" />
     <Compile Include="AlterEgo\modFileSettingsandArray.vb" />
     <Compile Include="AlterEgo\modMain.vb" />
@@ -78,9 +63,7 @@
     <Compile Include="AlterEgo\AdminTabsControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AlterEgo\frmBatchResults.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="AlterEgo\frmBatchResults.vb" />
     <Compile Include="AlterEgo\ctrlBlank.vb">
       <SubType>UserControl</SubType>
     </Compile>
@@ -92,20 +75,14 @@
     <Compile Include="AlterEgo\fnNetSend.vb" />
     <Compile Include="AlterEgo\fnRebootShutdown.vb" />
     <Compile Include="AlterEgo\fnStartRemoteProcess.vb" />
-    <Compile Include="AlterEgo\frmChangePWSingle.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="AlterEgo\frmChangePWSingle.vb" />
     <Compile Include="AlterEgo\frmNetworkInfo.vb" />
     <Compile Include="AlterEgo\modMSC.vb" />
-    <Compile Include="AlterEgo\frmAdminTK.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="AlterEgo\frmAdminTK.vb" />
     <Compile Include="AlterEgo\ctrlListProcessing.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AlterEgo\frmChangePW.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="AlterEgo\frmChangePW.vb" />
     <Compile Include="AlterEgo\ModFN.vb" />
     <Compile Include="AlterEgo\UFR.vb" />
     <Compile Include="AlterEgo\EnterComboBox.vb">

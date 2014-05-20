@@ -14,14 +14,26 @@ Namespace AlterEgo
     <DesignerGenerated> _
     Public Class ctrlListProcessing
         Inherits UserControl
+
+        Private _array As String
+
         ' Methods
         Public Sub New()
             AddHandler MyBase.Load, New EventHandler(AddressOf Me.ctrlListProcessing_Load)
-            Me.BatchArray = New String(&H2711  - 1) {}
+            Me.BatchArray = New String(&H2711 - 1) {}
             Me.ItemCounter = 0
             Me.strDelimeter = MySettingsProperty.Settings.AdminTKstrDelimeter
-            Me.InitializeComponent
+            Me.InitializeComponent()
         End Sub
+
+        Private Property Array(num2 As Integer, num As Integer) As String
+            Get
+                Return _array
+            End Get
+            Set(value As String)
+                _array = value
+            End Set
+        End Property
 
         Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs)
             Me.txtOutputFile.Text = Me.fnGetFilePath
@@ -173,25 +185,25 @@ Namespace AlterEgo
                         Dim str2 As String = strArray4(num6)
                     Label_02AD:
                         num10 = &H2E
-                        strArray(num2, num) = str2
+                        Array(num2, num) = str2
                     Label_02BD:
                         num10 = &H2F
                         num += 1
                     Label_02C7:
                         num10 = &H30
-                        strArray(num2, num) = Conversions.ToString(obj4.Item("MACAddress"))
+                        Array(num2, num) = Conversions.ToString(obj4.Item("MACAddress"))
                     Label_02E6:
                         num10 = &H31
                         num += 1
                     Label_02F0:
                         num10 = 50
-                        strArray(num2, num) = Conversions.ToString(obj4.Item("DNSHostName"))
+                        Array(num2, num) = Conversions.ToString(obj4.Item("DNSHostName"))
                     Label_030F:
                         num10 = &H33
                         num += 1
                     Label_0319:
                         num10 = &H34
-                        strArray(num2, num) = Conversions.ToString(obj4.Item("DHCPEnabled"))
+                        Array(num2, num) = Conversions.ToString(obj4.Item("DHCPEnabled"))
                         num6 += 1
                     Label_033E:
                         num10 = &H35
@@ -227,7 +239,7 @@ Namespace AlterEgo
                 End If
             Label_03D7:
                 num10 = &H3D
-                str = (str & Me.strDelimeter & strArray(num4, 0))
+                str = (str & Me.strDelimeter & Array(num4, 0))
             Label_03F1:
                 num10 = &H3F
                 If Not Me.cknet01.Checked Then
@@ -235,7 +247,7 @@ Namespace AlterEgo
                 End If
             Label_0402:
                 num10 = &H40
-                str = (str & Me.strDelimeter & strArray(num4, 1))
+                str = (str & Me.strDelimeter & Array(num4, 1))
             Label_041C:
                 num10 = &H42
                 If Not Me.cknet02.Checked Then

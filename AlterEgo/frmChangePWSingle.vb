@@ -337,6 +337,11 @@ Namespace AlterEgo
         Private components As IContainer
         Friend ScreenHeight As Integer
         Friend ScreenWidth As Integer
+
+        Sub Show()
+            Throw New NotImplementedException
+        End Sub
+
     End Class
 End Namespace
 

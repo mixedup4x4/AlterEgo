@@ -12,6 +12,18 @@ Namespace AlterEgo
     <DesignerGenerated> _
     Public Class frmCool
         Inherits Form
+
+        Dim AllowDrop As Boolean
+        Dim AutoScaleDimensions As SizeF
+        Dim AutoScaleMode As AutoScaleMode
+        Dim BackColor As Color
+        Dim ControlBox As Boolean
+        Dim ShowInTaskbar As Boolean
+        Dim Height As Integer
+        Dim TransparencyKey As Color
+        Dim FormBorderStyle As FormBorderStyle
+        Dim Controls As Object
+
         ' Methods
         Public Sub New()
             AddHandler MyBase.Shown, New EventHandler(AddressOf Me.frmCool_Shown)
@@ -20,9 +32,9 @@ Namespace AlterEgo
         End Sub
 
         <DebuggerNonUserCode> _
-        Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Protected Sub Dispose(ByVal disposing As Boolean)
             If (disposing AndAlso (Not Me.components Is Nothing)) Then
-                Me.components.Dispose
+                Me.components.Dispose()
             End If
             MyBase.Dispose(disposing)
         End Sub
@@ -120,6 +132,15 @@ Namespace AlterEgo
         <AccessedThroughProperty("Timer1")> _
         Private _Timer1 As Timer
         Private components As IContainer
+
+        Private Sub SuspendLayout()
+            Throw New NotImplementedException
+        End Sub
+
+        Private Sub ResumeLayout(p1 As Boolean)
+            Throw New NotImplementedException
+        End Sub
+
     End Class
 End Namespace
 
